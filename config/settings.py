@@ -53,6 +53,10 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'config.urls'
 
+import os 
+MEDIA_ROOT=os.path.join(BASE_DIR, 'media')
+MEDIA_URL='/media/'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
